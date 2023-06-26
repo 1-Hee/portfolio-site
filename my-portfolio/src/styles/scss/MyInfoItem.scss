@@ -1,0 +1,100 @@
+@import "./commons.scss";
+
+.my-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+
+  background: linear-gradient(147deg, #fefefe 0%, rgba(255, 255, 255, 0) 100%);
+
+  .my-info-div {
+    display: flex;
+    padding: 32px 16px;
+    align-items: center;
+    gap: 32px;
+
+    .my-image {
+      width: 256px;
+      height: 256px;
+      background-image: url("../../assets/personals/my-profile.png");
+
+      border-radius: 128px;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      transition: 0.3s;
+
+      .image-filter {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        border-radius: 128px;
+      }
+    }
+
+    .my-image:hover {
+      background-image: url("../../assets/personals//my-profile2.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .image-filter {
+        background-color: rgba($mono900, 0.15);
+      }
+    }
+
+    .info-items {
+      display: flex;
+      padding: 16px 0px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+
+      .item-name,
+      .item-birth,
+      .item-email,
+      .item-location,
+      .item-edu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        p {
+          font-size: 24px;
+        }
+      }
+
+      .item-name {
+        .name-div {
+          display: flex;
+          align-items: flex-end;
+          gap: 8px;
+          p:first-child {
+            font-size: 24px;
+          }
+          p:last-child {
+            font-size: 20px;
+          }
+        }
+      }
+      .item-edu {
+        .univ-info {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          p:first-child {
+            font-size: 24px;
+          }
+          p:last-child {
+            font-size: 16px;
+          }
+        }
+      }
+      div > .icon {
+        width: 36px;
+        height: 36px;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+}

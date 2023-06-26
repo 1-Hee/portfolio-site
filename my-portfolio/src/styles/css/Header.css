@@ -1,0 +1,67 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@font-face {
+  font-family: "sunshine-bold";
+  src: url("../../assets/fonts/gwangyang-sunshine-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sunshine-regular";
+  src: url("../../assets/fonts/gwangyang-sunshine-regular.ttf") format("truetype");
+}
+.sunshine-bold {
+  font-family: "sunshine-bold", sans-serif;
+}
+
+.sunshine-regular {
+  font-family: "sunshine-regular", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.v-spacer-32 {
+  height: 32px;
+}
+
+.v-spacer-64 {
+  height: 64px;
+}
+
+.v-spacer-96 {
+  height: 96px;
+}
+
+.h-spacer-16px {
+  width: 16px;
+}
+
+.header {
+  background-color: #fefefe;
+  height: 64px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 12px 32px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.header .right-menu {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 16px;
+}
+.header .right-menu p:hover {
+  background-color: #e0e0e0;
+}
+.header p {
+  padding: 8px;
+  border-radius: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Header.css.map */
