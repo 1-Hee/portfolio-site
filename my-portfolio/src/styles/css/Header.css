@@ -48,6 +48,13 @@
   flex-shrink: 0;
   align-self: stretch;
 }
+.header .header-title {
+  font-size: 24px;
+  transition: 0.5s;
+}
+.header .header-title:hover {
+  color: #7a7777;
+}
 .header .right-menu {
   display: flex;
   padding: 8px;

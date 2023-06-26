@@ -5,7 +5,7 @@ import "../styles/css/Header.css";
 function Header() {
   return (
     <div className="header">
-      <p>1-Hee</p>
+      <p className="header-title">1-Hee</p>
       <div className="right-menu">
         <p>Introduce</p>
         <p>Skills</p>
