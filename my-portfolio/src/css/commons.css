@@ -1,7 +1,4 @@
-//font init
-// helvetica
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
-// sunshine
 @font-face {
   font-family: "sunshine-bold";
   src: url("../../assets/fonts/gwangyang-sunshine-bold.ttf") format("truetype");
@@ -10,31 +7,18 @@
   font-family: "sunshine-regular";
   src: url("../../assets/fonts/gwangyang-sunshine-regular.ttf") format("truetype");
 }
-
 .sunshine-bold {
   font-family: "sunshine-bold", sans-serif;
 }
+
 .sunshine-regular {
   font-family: "sunshine-regular", sans-serif;
 }
 
-$deep-sky-blue: #86caff;
-$sky-blue: #e1f4ff;
-$black: #0b0a0a;
-$white: #fefefe;
-$orange: #ffa843;
-
-// monos
-$mono900: #3d3838;
-$mono800: #514c4c;
-$mono700: #666060;
-$mono600: #7a7777;
-$mono500: #8e8c8c;
-$mono400: #a3a3a3;
-$mono300: #b7b7b7;
-$mono200: #cccccc;
-$mono100: #e0e0e0;
-$mono50: #f4f4f4;
+.App {
+  flex-direction: column;
+  align-items: center;
+}
 
 * {
   padding: 0;
@@ -42,7 +26,6 @@ $mono50: #f4f4f4;
   font-family: "Helvetica Neue", sans-serif;
 }
 
-//spacer
 .v-spacer-32 {
   height: 32px;
 }
@@ -58,3 +41,5 @@ $mono50: #f4f4f4;
 .h-spacer-16px {
   width: 16px;
 }
+
+/*# sourceMappingURL=commons.css.map */
