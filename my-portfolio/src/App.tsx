@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import MyInfoItem from "./components/MyInfoItem";
 import TechStacks from "./components/TechStacks";
 import ProjectList from "./components/ProjectList";
+import BlogAndGitHub from "./components/BlogAndGitHub";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
       <MyInfoItem />
       <TechStacks />
       <ProjectList />
+      <BlogAndGitHub />
     </div>
   );
 }
