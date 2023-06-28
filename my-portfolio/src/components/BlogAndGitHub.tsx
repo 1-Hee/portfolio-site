@@ -1,4 +1,8 @@
-import React from "react";
+import { useEffect, useRef } from "react";
+
+//import redux
+import { useAppDispatch } from "../redux/hooks";
+import { setGitBlog } from "../redux/headerPosition";
 
 // import image
 import gitHubIcon from "../assets/skill-icons/github-icons.png";
@@ -15,8 +19,16 @@ const moveToLink = (link: string) => {
 };
 
 const BlogAndGitHub = () => {
+  const gitBlogRef = useRef<HTMLInputElement>(null);
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    if (gitBlogRef.current) {
+      dispatch(setGitBlog(gitBlogRef.current.offsetTop));
+    }
+  }, [gitBlogRef]);
+
   return (
-    <div className="blog-github-item">
+    <div className="blog-github-item" ref={gitBlogRef}>
       <p className="blog-github-title">BLOG & GITHUB</p>
       <div className="blog-github-items">
         <div

@@ -1,4 +1,8 @@
-import React from "react";
+import { useEffect, useRef } from "react";
+
+//import redux
+import { useAppDispatch } from "../redux/hooks";
+import { setTech } from "../redux/headerPosition";
 
 //import image
 // web-base-skills;
@@ -31,8 +35,17 @@ import gitHubIcon from "../assets/skill-icons/github.png";
 import "../styles/css/TechStacks.css";
 
 const TechStacks = () => {
+  const techRef = useRef<HTMLInputElement>(null);
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    if (techRef.current) {
+      console.log(techRef.current.offsetTop);
+      dispatch(setTech(techRef.current.offsetTop));
+    }
+  }, [techRef]);
+
   return (
-    <div className="tech-board">
+    <div className="tech-board" ref={techRef}>
       <p className="tech-skill-title">TECH-SKILLS</p>
       <div className="top-skill-board">
         <div className="front-skills tech-card-item">

@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+
+import { useAppSelector } from "../redux/hooks";
 
 import "../styles/css/Header.css";
 
 const scrollToPosition = (y: number) => {
+  console.log(y);
   window.scrollTo({
     top: y,
     behavior: "smooth", // 부드럽게 스크롤 이동하도록 설정 (선택사항)
@@ -11,7 +14,16 @@ const scrollToPosition = (y: number) => {
 };
 
 export default function Header({ scrollY: number = 0 }) {
-  const [posArr] = useState([324, 324 + 398, 324 + 398 + 1148, 324 + 400 + 1168 + 560]);
+  const introducePos = useAppSelector((state) => state.headerPosition.introduce);
+  const techPos = useAppSelector((state) => state.headerPosition.tech);
+  const pjtPos = useAppSelector((state) => state.headerPosition.project);
+  const gitBlogPos = useAppSelector((state) => state.headerPosition.gitBlog);
+
+  const [posArr, setPosArr] = useState([0, 0, 0, 0, 0]);
+
+  useEffect(() => {
+    setPosArr([introducePos, techPos, pjtPos, gitBlogPos]);
+  }, [introducePos, techPos, pjtPos, gitBlogPos]);
 
   return (
     // eslint-disable-next-line no-restricted-globals

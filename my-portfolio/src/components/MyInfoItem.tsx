@@ -1,4 +1,7 @@
-import React from "react";
+import { useEffect, useRef } from "react";
+//import redux
+import { useAppDispatch } from "../redux/hooks";
+import { setIntroduce } from "../redux/headerPosition";
 
 // import icons
 import userIcon from "../assets/personals/icon-user.png";
@@ -10,8 +13,17 @@ import eduIcon from "../assets/personals/icon-edu.png";
 import "../styles/css/MyInfoItem.css";
 
 function MyInfoItem() {
+  const infoRef = useRef<HTMLInputElement>(null);
+  const dispatch = useAppDispatch();
+  // const introduce = useAppSelector((state) => state.headerPosition.introduce);
+  useEffect(() => {
+    if (infoRef.current) {
+      dispatch(setIntroduce(infoRef.current.offsetTop));
+    }
+  }, [infoRef]);
+
   return (
-    <div className="my-info-item">
+    <div className="my-info-item" ref={infoRef}>
       <div className="v-spacer-32" />
       <div className="my-info-div">
         <div className="my-image">

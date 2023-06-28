@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from "react";
+// import react
+import { useEffect } from "react";
+// import redux and reducers
+import { useAppSelector, useAppDispatch } from "./redux/hooks";
+import { setCurScroll } from "./redux/headerPosition";
 
 // import component
 import Header from "./components/Header";
@@ -13,13 +17,12 @@ import FloatBtn from "./components/FloatBtn";
 import "./App.css";
 
 function App() {
-  const [scrollY, setScrollY] = useState(0);
+  const dispatch = useAppDispatch();
+  const curScroll = useAppSelector((state) => state.headerPosition.curScroll);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setScrollY(scrollPosition);
-      // console.log("Scroll Position:", scrollPosition);
+      dispatch(setCurScroll(window.scrollY));
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,14 +33,14 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header scrollY={scrollY} />
+      <Header scrollY={curScroll} />
       <Banner />
       <MyInfoItem />
       <TechStacks />
       <ProjectList />
       <BlogAndGitHub />
       <BottomLayer />
-      {window.scrollY >= 96 ? <FloatBtn /> : <></>}
+      {window.scrollY >= 60 ? <FloatBtn /> : <></>}
     </div>
   );
 }

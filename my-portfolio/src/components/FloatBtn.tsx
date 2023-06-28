@@ -1,4 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
+// import redux and reducers
+import { useAppSelector, useAppDispatch } from "../redux/hooks";
+import { setCurScroll } from "../redux/headerPosition";
 
 import "../styles/css/FloatBtn.css";
 
@@ -10,8 +13,10 @@ const moveToTop = () => {
 };
 
 export default function FloatBtn() {
+  const dispatch = useAppDispatch();
+  const curScroll = useAppSelector((state) => state.headerPosition.curScroll);
   const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {}, [isVisible]);
+  useEffect(() => {}, [curScroll]);
   return (
     <div
       onMouseOver={(e) => {
@@ -23,6 +28,7 @@ export default function FloatBtn() {
       className="float-btn"
       onClick={(e) => {
         moveToTop();
+        dispatch(setCurScroll(0));
       }}
     >
       <div className={`context-box ${isVisible ? "visible" : ""}`}>CLICK</div>
