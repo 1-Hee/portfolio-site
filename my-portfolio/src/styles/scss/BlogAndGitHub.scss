@@ -37,6 +37,8 @@
 
       cursor: pointer;
 
+      transition: 0.3s;
+
       img {
         width: 64px;
         height: 64px;
@@ -56,6 +58,11 @@
       .url:hover {
         color: $mono700;
       }
+    }
+
+    .github-item:hover,
+    .blog-item:hover {
+      transform: translateY(-5px);
     }
   }
 }

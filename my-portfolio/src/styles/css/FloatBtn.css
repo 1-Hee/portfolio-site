@@ -55,27 +55,47 @@
   scrollbar-width: none; /* 파이어폭스 */
 }
 
-.project-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  align-self: stretch;
-}
-.project-list .project-title {
-  text-align: center;
-  font-size: 32px;
-  font-style: oblique;
-  font-weight: 900;
-}
-.project-list .project-frame {
+.float-btn {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #0b0a0a;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: left;
-  gap: 64px;
+  justify-content: center;
+  padding: 8px;
+  transition: 0.3s;
+}
+.float-btn img {
+  content: url("../../assets/personals/arrow-btn.png");
   width: 100%;
-  height: max-content;
-  overflow-x: scroll;
+  height: 100%;
+  cursor: pointer;
+}
+.float-btn .context-box {
+  visibility: hidden;
+  border: 1px solid #0b0a0a;
+  position: absolute;
+  width: 100%;
+  height: 1.2rem;
+  top: -1.8rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  font-size: 8px;
+}
+.float-btn .visible {
+  visibility: visible;
+  transition: 1s;
 }
 
-/*# sourceMappingURL=ProjectList.css.map */
+.float-btn:hover {
+  border: 2px solid #ffa843;
+}
+
+/*# sourceMappingURL=FloatBtn.css.map */

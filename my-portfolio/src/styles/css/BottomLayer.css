@@ -55,27 +55,18 @@
   scrollbar-width: none; /* 파이어폭스 */
 }
 
-.project-list {
+.bottom-layer {
+  margin-top: 64px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  align-self: stretch;
-}
-.project-list .project-title {
-  text-align: center;
-  font-size: 32px;
-  font-style: oblique;
-  font-weight: 900;
-}
-.project-list .project-frame {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 64px;
   width: 100%;
-  height: max-content;
-  overflow-x: scroll;
+  height: 96px;
+  justify-content: center;
+  align-items: center;
+  background: #0b0a0a;
+}
+.bottom-layer .copyright-text {
+  color: #fefefe;
+  font-size: 24px;
 }
 
-/*# sourceMappingURL=ProjectList.css.map */
+/*# sourceMappingURL=BottomLayer.css.map */

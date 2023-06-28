@@ -20,6 +20,13 @@
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+*::-webkit-scrollbar {
+  display: none;
 }
 
 .v-spacer-32 {
@@ -49,15 +56,19 @@
 }
 
 .header {
-  background-color: #fefefe;
+  background-color: rgba(254, 254, 254, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 64px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  padding: 8px 8px;
+  /* box-shadow: 0px 2px 2px 0px rgba($black, 0.25); */
   display: flex;
-  padding: 12px 32px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-shrink: 0;
-  align-self: stretch;
+  z-index: 1;
+  transition: 0.5s;
 }
 .header .header-title {
   font-size: 24px;
@@ -68,7 +79,7 @@
 }
 .header .right-menu {
   display: flex;
-  padding: 8px;
+  margin: 8px;
   align-items: center;
   gap: 16px;
 }
@@ -80,6 +91,17 @@
   border-radius: 2px;
   transition: 0.5s;
   cursor: pointer;
+  color: #fefefe;
+}
+
+.header-white,
+.header:hover {
+  background-color: #fefefe;
+  box-shadow: 0px 2px 2px 0px rgba(11, 10, 10, 0.25);
+}
+.header-white p,
+.header:hover p {
+  color: #0b0a0a;
 }
 
 /*# sourceMappingURL=Header.css.map */

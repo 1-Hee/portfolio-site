@@ -40,6 +40,15 @@ $mono50: #f4f4f4;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
+
+  //scroll
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+*::-webkit-scrollbar {
+  display: none;
 }
 
 //spacer
