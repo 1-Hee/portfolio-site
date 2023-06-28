@@ -70,7 +70,7 @@
     height: 4rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .bottom-layer {
     margin-top: 3rem;
     height: 5rem;
@@ -85,7 +85,7 @@
     font-size: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .bottom-layer .copyright-text {
     font-size: 0.75rem;
   }

@@ -31,7 +31,7 @@ export default function FloatBtn() {
         dispatch(setCurScroll(0));
       }}
     >
-      <div className={`context-box ${isVisible ? "visible" : ""}`}>CLICK</div>
+      <div className={`context-box ${isVisible ? "visible" : ""}`}>UP</div>
       <img alt="arrow" />
     </div>
   );

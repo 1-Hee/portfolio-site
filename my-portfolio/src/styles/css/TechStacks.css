@@ -61,6 +61,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  width: 100vw;
 }
 @media (max-width: 400px) {
   .tech-board {
@@ -68,7 +69,7 @@
     gap: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board {
     pad: 1.2rem 0;
     gap: 0.75rem;
@@ -85,7 +86,7 @@
     font-size: 1.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .tech-skill-title {
     font-size: 1.75rem;
   }
@@ -104,7 +105,7 @@
     gap: 1rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board {
     gap: 1.5rem;
   }
@@ -118,11 +119,11 @@
 }
 @media (max-width: 400px) {
   .tech-board .top-skill-board .front-skills {
-    padding: 1rem;
-    gap: 0.5rem;
+    padding: 0.5rem;
+    gap: 1rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .front-skills {
     padding: 1.5rem;
     gap: 0.75rem;
@@ -142,7 +143,7 @@
     width: 4rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1000px) {
   .tech-board .top-skill-board .front-skills .web-base-skill img {
     width: 6rem;
   }
@@ -155,7 +156,7 @@
     width: 3.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .front-skills .web-base-skill img:last-child {
     width: 6rem;
   }
@@ -168,7 +169,7 @@
     height: 4rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .front-skills .react-icon {
     height: 6rem;
   }
@@ -187,7 +188,7 @@
     width: 4rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .front-skills .redux-ts-sass-div img {
     width: 6rem;
   }
@@ -200,7 +201,7 @@
     width: 4.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .front-skills .redux-ts-sass-div img:last-child {
     width: 7rem;
   }
@@ -219,7 +220,7 @@
     width: 4rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .front-skills .vue-stacks img {
     width: 6rem;
   }
@@ -237,7 +238,7 @@
     gap: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .android-skills {
     padding: 1.5rem;
     gap: 0.75rem;
@@ -251,7 +252,7 @@
     width: 4rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .android-skills img {
     width: 6rem;
   }
@@ -270,7 +271,7 @@
     width: 10rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .android-skills .retrofit-icon {
     width: 15rem;
   }
@@ -289,7 +290,7 @@
     width: 7.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .top-skill-board .android-skills .and-bottom-skills img:last-child {
     width: 12rem;
   }
@@ -307,7 +308,7 @@
     gap: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board {
     gap: 0.75rem;
   }
@@ -320,7 +321,7 @@
     width: 4rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board img {
     width: 6rem;
   }
@@ -338,7 +339,7 @@
     gap: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board .communication-tools {
     padding: 1.5rem;
     gap: 0.75rem;
@@ -354,7 +355,7 @@
     gap: 1rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board .communication-tools .communication-skills {
     gap: 1.5rem;
   }
@@ -372,7 +373,7 @@
     gap: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board .config-management {
     padding: 1.5rem;
     gap: 0.75rem;
@@ -389,7 +390,7 @@
     gap: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board .config-management .config-icons {
     gap: 0.75rem;
   }
@@ -402,7 +403,7 @@
     width: 6rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board .config-management img:first-child {
     width: 10rem;
   }
@@ -417,7 +418,7 @@
     gap: 0.5rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-board .bottom-skill-board .config-management .config-bottom-skills {
     gap: 0.75rem;
   }
@@ -441,7 +442,7 @@
     font-size: 1rem;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   .tech-title-text {
     font-size: 1.25rem;
   }
