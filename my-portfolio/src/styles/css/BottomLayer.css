@@ -56,17 +56,39 @@
 }
 
 .bottom-layer {
-  margin-top: 64px;
+  margin-top: 4rem;
   display: flex;
   width: 100%;
-  height: 96px;
+  height: 6rem;
   justify-content: center;
   align-items: center;
   background: #0b0a0a;
 }
+@media (max-width: 400px) {
+  .bottom-layer {
+    margin-top: 2rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .bottom-layer {
+    margin-top: 3rem;
+    height: 5rem;
+  }
+}
 .bottom-layer .copyright-text {
   color: #fefefe;
-  font-size: 24px;
+  font-size: 1rem;
+}
+@media (max-width: 400px) {
+  .bottom-layer .copyright-text {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .bottom-layer .copyright-text {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=BottomLayer.css.map */

@@ -69,6 +69,12 @@
   padding: 8px;
   transition: 0.3s;
 }
+@media (max-width: 400px) {
+  .float-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 .float-btn img {
   content: url("../../assets/personals/arrow-btn.png");
   width: 100%;
@@ -87,7 +93,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
-  font-size: 8px;
+  font-size: 0.5rem;
+}
+@media (max-width: 400px) {
+  .float-btn .context-box {
+    height: 0.6rem;
+    top: -0.9rem;
+    font-size: 0.1rem;
+  }
 }
 .float-btn .visible {
   visibility: visible;

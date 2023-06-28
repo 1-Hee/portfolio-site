@@ -13,6 +13,10 @@
   justify-content: center;
   padding: 8px;
   transition: 0.3s;
+  @media (max-width: 400px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
   img {
     content: url("../../assets/personals/arrow-btn.png");
     width: 100%;
@@ -31,7 +35,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
-    font-size: 8px;
+    font-size: 0.5rem;
+    @media (max-width: 400px) {
+      height: 0.6rem;
+      top: -0.9rem;
+      font-size: 0.1rem;
+    }
   }
   .visible {
     visibility: visible;

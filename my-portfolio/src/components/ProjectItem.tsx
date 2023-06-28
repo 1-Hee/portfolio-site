@@ -19,7 +19,6 @@ const ProjectItem = () => {
         className="project-thumbnail"
         style={{ background: `url(${sampleImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
       />
-      <hr className="project-item-line"></hr>
       <div className="project-infos">
         <p className="project-name sunshine-bold">{pjName}</p>
         <div className="date-text">

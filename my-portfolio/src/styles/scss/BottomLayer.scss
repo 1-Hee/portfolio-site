@@ -1,17 +1,31 @@
 @import "./commons.scss";
 
 .bottom-layer {
-  margin-top: 64px;
+  margin-top: 4rem;
   display: flex;
   width: 100%;
-  height: 96px;
+  height: 6rem;
   justify-content: center;
   align-items: center;
-
   background: $black;
+
+  @media (max-width: 400px) {
+    margin-top: 2rem;
+    height: 4rem;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 3rem;
+    height: 5rem;
+  }
 
   .copyright-text {
     color: $white;
-    font-size: 24px;
+    font-size: 1rem;
+    @media (max-width: 400px) {
+      font-size: 0.5rem;
+    }
+    @media (max-width: 1024px) {
+      font-size: 0.75rem;
+    }
   }
 }

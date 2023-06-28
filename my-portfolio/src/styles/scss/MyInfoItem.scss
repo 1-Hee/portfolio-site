@@ -5,30 +5,54 @@
   flex-direction: column;
   align-items: center;
   align-self: stretch;
-
-  background: linear-gradient(147deg, #fefefe 0%, rgba(255, 255, 255, 0) 100%);
-
+  background: linear-gradient(147deg, $white 0%, rgba($black, 0) 100%);
+  width: 100vw;
+  height: max-content;
   .my-info-div {
     display: flex;
-    padding: 32px 16px;
+    padding: 2rem 1rem;
     align-items: center;
-    gap: 32px;
+    justify-content: center;
+    gap: 2rem;
 
+    @media (max-width: 400px) {
+      padding: 0 1rem;
+      gap: 1rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 1024px) {
+      pad: 0 1.5rem;
+      gap: 1.5rem;
+    }
     .my-image {
-      width: 256px;
-      height: 256px;
-      background-image: url("../../assets/personals/my-profile.png");
+      width: 16rem;
+      height: 16rem;
 
-      border-radius: 128px;
-      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background-image: url("../../assets/personals/my-profile.png");
+      background-position: center;
+      background-size: contain;
+      border-radius: 8rem;
+      box-shadow: 0px 0.125rem 0.125rem 0px rgba($black, 0.25) inset, 0px 0.25rem 0.25rem 0px rgba($black, 0.25);
+
       transition: 0.3s;
+      @media (max-width: 400px) {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+      }
+      @media (max-width: 1024px) {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 6rem;
+      }
 
       .image-filter {
         position: relative;
         width: 100%;
         height: 100%;
         top: 0;
-        border-radius: 128px;
+        border-radius: 8rem;
       }
     }
 
@@ -45,10 +69,16 @@
 
     .info-items {
       display: flex;
-      padding: 16px 0px;
+      padding: 1rem 0px;
       flex-direction: column;
       align-items: flex-start;
-      gap: 16px;
+      gap: 1rem;
+      @media (max-width: 400px) {
+        gap: 0.5rem;
+      }
+      @media (max-width: 1024px) {
+        gap: 0.75rem;
+      }
 
       .item-name,
       .item-birth,
@@ -57,9 +87,21 @@
       .item-edu {
         display: flex;
         align-items: center;
-        gap: 32px;
+        gap: 1rem;
+        @media (max-width: 400px) {
+          gap: 0.5rem;
+        }
+        @media (max-width: 1024px) {
+          gap: 0.75rem;
+        }
         p {
-          font-size: 24px;
+          font-size: 1.5rem;
+          @media (max-width: 400px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 1024px) {
+            font-size: 1.25rem;
+          }
         }
       }
 
@@ -67,12 +109,30 @@
         .name-div {
           display: flex;
           align-items: flex-end;
-          gap: 8px;
+          gap: 0.5rem;
+          @media (max-width: 400px) {
+            gap: 0.25rem;
+          }
+          @media (max-width: 1024px) {
+            gap: 0.35rem;
+          }
           p:first-child {
-            font-size: 24px;
+            font-size: 1.5rem;
+            @media (max-width: 400px) {
+              font-size: 1rem;
+            }
+            @media (max-width: 1024px) {
+              font-size: 1.25rem;
+            }
           }
           p:last-child {
-            font-size: 20px;
+            font-size: 1.25rem;
+            @media (max-width: 400px) {
+              font-size: 0.75rem;
+            }
+            @media (max-width: 1024px) {
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -80,18 +140,45 @@
         .univ-info {
           display: flex;
           align-items: center;
-          gap: 16px;
+          gap: 0.5rem;
+          @media (max-width: 400px) {
+            gap: 0.25rem;
+          }
+          @media (max-width: 1024px) {
+            gap: 0.35rem;
+          }
+
           p:first-child {
-            font-size: 24px;
+            font-size: 1.5rem;
+            @media (max-width: 400px) {
+              font-size: 1rem;
+            }
+            @media (max-width: 1024px) {
+              font-size: 1.25rem;
+            }
           }
           p:last-child {
-            font-size: 16px;
+            font-size: 1rem;
+            @media (max-width: 400px) {
+              font-size: 0.75rem;
+            }
+            @media (max-width: 1024px) {
+              font-size: 0.9rem;
+            }
           }
         }
       }
       div > .icon {
-        width: 36px;
-        height: 36px;
+        width: 2rem;
+        height: 2rem;
+        @media (max-width: 400px) {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+        @media (max-width: 1024px) {
+          width: 1.6rem;
+          height: 1.6rem;
+        }
         background-position: center;
         background-size: contain;
       }

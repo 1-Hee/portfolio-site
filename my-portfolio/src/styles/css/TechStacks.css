@@ -57,135 +57,370 @@
 
 .tech-board {
   display: flex;
-  padding: 32px 0px;
+  padding: 1rem 0;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
+}
+@media (max-width: 400px) {
+  .tech-board {
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board {
+    pad: 1.2rem 0;
+    gap: 0.75rem;
+  }
 }
 .tech-board .tech-skill-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: oblique;
   font-weight: 900;
+}
+@media (max-width: 400px) {
+  .tech-board .tech-skill-title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .tech-skill-title {
+    font-size: 1.75rem;
+  }
 }
 .tech-board .top-skill-board {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board {
+    gap: 1.5rem;
+  }
 }
 .tech-board .top-skill-board .front-skills {
   display: flex;
-  padding: 32px;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .front-skills {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .front-skills {
+    padding: 1.5rem;
+    gap: 0.75rem;
+  }
 }
 .tech-board .top-skill-board .front-skills .web-base-skill {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 .tech-board .top-skill-board .front-skills .web-base-skill img {
-  width: 128px;
+  width: 8rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .front-skills .web-base-skill img {
+    width: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .front-skills .web-base-skill img {
+    width: 6rem;
+  }
 }
 .tech-board .top-skill-board .front-skills .web-base-skill img:last-child {
-  width: 120px;
+  width: 7.5rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .front-skills .web-base-skill img:last-child {
+    width: 3.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .front-skills .web-base-skill img:last-child {
+    width: 6rem;
+  }
 }
 .tech-board .top-skill-board .front-skills .react-icon {
-  height: 128px;
+  height: 8rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .front-skills .react-icon {
+    height: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .front-skills .react-icon {
+    height: 6rem;
+  }
 }
 .tech-board .top-skill-board .front-skills .redux-ts-sass-div {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
 }
 .tech-board .top-skill-board .front-skills .redux-ts-sass-div img {
-  width: 128px;
+  width: 8rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .front-skills .redux-ts-sass-div img {
+    width: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .front-skills .redux-ts-sass-div img {
+    width: 6rem;
+  }
 }
 .tech-board .top-skill-board .front-skills .redux-ts-sass-div img:last-child {
-  width: 145px;
+  width: 9rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .front-skills .redux-ts-sass-div img:last-child {
+    width: 4.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .front-skills .redux-ts-sass-div img:last-child {
+    width: 7rem;
+  }
 }
 .tech-board .top-skill-board .front-skills .vue-stacks {
-  margin-top: 16px;
+  margin-top: 1rem;
   display: flex;
   align-items: flex-start;
-  gap: 48px;
+  gap: 3rem;
 }
 .tech-board .top-skill-board .front-skills .vue-stacks img {
-  width: 128px;
+  width: 8rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .front-skills .vue-stacks img {
+    width: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .front-skills .vue-stacks img {
+    width: 6rem;
+  }
 }
 .tech-board .top-skill-board .android-skills {
   display: flex;
-  padding: 32px;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .android-skills {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .android-skills {
+    padding: 1.5rem;
+    gap: 0.75rem;
+  }
 }
 .tech-board .top-skill-board .android-skills img {
-  width: 128px;
+  width: 8rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .android-skills img {
+    width: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .android-skills img {
+    width: 6rem;
+  }
 }
 .tech-board .top-skill-board .android-skills .and-top-skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 .tech-board .top-skill-board .android-skills .retrofit-icon {
-  width: 328px;
+  width: 20.5rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .android-skills .retrofit-icon {
+    width: 10rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .android-skills .retrofit-icon {
+    width: 15rem;
+  }
 }
 .tech-board .top-skill-board .android-skills .and-bottom-skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 .tech-board .top-skill-board .android-skills .and-bottom-skills img:last-child {
-  width: 250px;
+  width: 15rem;
+}
+@media (max-width: 400px) {
+  .tech-board .top-skill-board .android-skills .and-bottom-skills img:last-child {
+    width: 7.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .top-skill-board .android-skills .and-bottom-skills img:last-child {
+    width: 12rem;
+  }
 }
 .tech-board .bottom-skill-board {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 1rem;
   align-self: stretch;
+  flex-wrap: wrap;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board {
+    gap: 0.75rem;
+  }
 }
 .tech-board .bottom-skill-board img {
-  width: 128px;
+  width: 8rem;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board img {
+    width: 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board img {
+    width: 6rem;
+  }
 }
 .tech-board .bottom-skill-board .communication-tools {
   display: flex;
-  padding: 32px;
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board .communication-tools {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board .communication-tools {
+    padding: 1.5rem;
+    gap: 0.75rem;
+  }
 }
 .tech-board .bottom-skill-board .communication-tools .communication-skills {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board .communication-tools .communication-skills {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board .communication-tools .communication-skills {
+    gap: 1.5rem;
+  }
 }
 .tech-board .bottom-skill-board .config-management {
   display: flex;
-  padding: 32px;
+  padding: 2rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1rem;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board .config-management {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board .config-management {
+    padding: 1.5rem;
+    gap: 0.75rem;
+  }
 }
 .tech-board .bottom-skill-board .config-management .config-icons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1rem;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board .config-management .config-icons {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board .config-management .config-icons {
+    gap: 0.75rem;
+  }
 }
 .tech-board .bottom-skill-board .config-management img:first-child {
-  width: 196px;
+  width: 12rem;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board .config-management img:first-child {
+    width: 6rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board .config-management img:first-child {
+    width: 10rem;
+  }
 }
 .tech-board .bottom-skill-board .config-management .config-bottom-skills {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
+}
+@media (max-width: 400px) {
+  .tech-board .bottom-skill-board .config-management .config-bottom-skills {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-board .bottom-skill-board .config-management .config-bottom-skills {
+    gap: 0.75rem;
+  }
 }
 
 .title-line {
@@ -199,14 +434,30 @@
   width: 100%;
   font-style: oblique;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+@media (max-width: 400px) {
+  .tech-title-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .tech-title-text {
+    font-size: 1.25rem;
+  }
 }
 
 .tech-card-item {
   transition: transform 0.3s ease;
-  border-radius: 32px;
+  border-radius: 2rem;
   background: #fff;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 400px) {
+  .tech-card-item {
+    border-radius: 1rem;
+    box-shadow: 0px 0.25rem 0.25rem 0px rgba(11, 10, 10, 0.25);
+  }
 }
 
 .tech-card-item:hover {

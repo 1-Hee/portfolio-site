@@ -19,26 +19,26 @@ function MyInfoItem() {
         </div>
         <div className="info-items">
           <div className="item-name">
-            <div className="icon" style={{ background: `url(${userIcon})` }}></div>
+            <img className="icon" style={{ content: `url(${userIcon})` }} alt="user" />
             <div className="name-div">
               <p className="sunshine-bold">조원희</p>
               <p className="sunshine-regular">1-Hee</p>
             </div>
           </div>
           <div className="item-birth">
-            <div className="icon" style={{ background: `url(${birthIcon})` }}></div>
+            <img className="icon" style={{ content: `url(${birthIcon})` }} alt="birth" />
             <p>1997.10.01.</p>
           </div>
           <div className="item-email">
-            <div className="icon" style={{ background: `url(${emailIcon})` }}></div>
+            <img className="icon" style={{ content: `url(${emailIcon})` }} alt="email" />
             <p>onehee9710@gmail.com</p>
           </div>
           <div className="item-location">
-            <div className="icon" style={{ background: `url(${locationIcon})` }}></div>
+            <img className="icon" style={{ content: `url(${locationIcon})` }} alt="loc" />
             <p className="sunshine-bold">충청북도 음성군</p>
           </div>
           <div className="item-edu">
-            <div className="icon" style={{ background: `url(${eduIcon})` }}></div>
+            <img className="icon" style={{ content: `url(${eduIcon})` }} alt="edu" />
             <div className="univ-info">
               <p className="sunshine-bold">충북대학교</p>
               <p className="sunshine-regular">식물자원학전공</p>

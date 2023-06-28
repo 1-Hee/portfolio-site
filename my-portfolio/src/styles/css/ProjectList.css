@@ -59,23 +59,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 2.5rem;
+  margin-top: 1rem;
   align-self: stretch;
+  width: 100vw;
 }
 .project-list .project-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: oblique;
   font-weight: 900;
+}
+@media (max-width: 400px) {
+  .project-list .project-title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .project-list .project-title {
+    font-size: 1.75rem;
+  }
 }
 .project-list .project-frame {
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 64px;
-  width: 100%;
+  gap: 3rem;
+  width: 100vw;
   height: max-content;
   overflow-x: scroll;
+}
+@media (max-width: 400px) {
+  .project-list .project-frame {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .project-list .project-frame {
+    gap: 2rem;
+  }
 }
 
 /*# sourceMappingURL=ProjectList.css.map */
