@@ -111,6 +111,7 @@
   }
 }
 .project-item .project-infos .project-name {
+  width: 100%;
   font-size: 1.5rem;
 }
 @media (max-width: 400px) {
@@ -152,7 +153,7 @@
   }
 }
 .project-item .project-infos .pj-type-badge {
-  display: flex;
+  display: black;
   padding: 0.5rem;
   justify-content: center;
   align-items: flex-start;
@@ -168,6 +169,18 @@
   .project-item .project-infos .pj-type-badge {
     font-size: 0.75rem;
   }
+}
+.project-item .project-infos .android {
+  background-color: #a9f8b6;
+  color: #666060;
+}
+.project-item .project-infos .web-app {
+  background-color: #e1f4ff;
+  color: #0b0a0a;
+}
+.project-item .project-infos .def-type {
+  background-color: #e0e0e0;
+  color: #3d3838;
 }
 
 .project-item:hover {

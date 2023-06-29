@@ -27,6 +27,7 @@ import fcmIcon from "../assets/skill-icons/fcm.png";
 // communication skill
 import notionIcon from "../assets/skill-icons/notion.png";
 import jiraIcon from "../assets/skill-icons/jira.png";
+import figma from "../assets/skill-icons/figma.png";
 // config management skill
 import gitIcon from "../assets/skill-icons/git.png";
 import gitlabIcon from "../assets/skill-icons/gitlab.png";
@@ -39,7 +40,6 @@ const TechStacks = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
     if (techRef.current) {
-      console.log(techRef.current.offsetTop);
       dispatch(setTech(techRef.current.offsetTop));
     }
   }, [techRef]);
@@ -90,6 +90,7 @@ const TechStacks = () => {
           <div className="communication-skills">
             <img style={{ content: `url(${notionIcon})` }} alt="notion" />
             <img style={{ content: `url(${jiraIcon})` }} alt="jira" />
+            <img style={{ content: `url(${figma})` }} alt="figma" />
           </div>
         </div>
         <div className="config-management tech-card-item">

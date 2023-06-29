@@ -119,7 +119,7 @@
 }
 @media (max-width: 400px) {
   .tech-board .top-skill-board .front-skills {
-    padding: 0.5rem;
+    padding: 1rem;
     gap: 1rem;
   }
 }

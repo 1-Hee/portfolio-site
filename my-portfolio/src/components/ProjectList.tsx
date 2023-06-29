@@ -4,6 +4,9 @@ import { useEffect, useRef } from "react";
 import { useAppDispatch } from "../redux/hooks";
 import { setProject } from "../redux/headerPosition";
 
+//import data
+import { pjtInfos } from "../constant/ProjectInfo";
+
 // import components
 import ProjectItem from "./ProjectItem";
 
@@ -14,7 +17,6 @@ const ProjectList = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
     if (pjtRef.current) {
-      console.log(pjtRef.current.offsetTop);
       dispatch(setProject(pjtRef.current.offsetTop));
     }
   }, [pjtRef]);
@@ -23,8 +25,8 @@ const ProjectList = () => {
     <div className="project-list" ref={pjtRef}>
       <p className="project-title">PROJECTS</p>
       <div className="project-frame scroll">
-        {Array.from({ length: 5 }, (_, index) => index + 1).map((e, i) => (
-          <ProjectItem key={i} />
+        {pjtInfos.map((e, i) => (
+          <ProjectItem key={i} project={e} />
         ))}
       </div>
     </div>

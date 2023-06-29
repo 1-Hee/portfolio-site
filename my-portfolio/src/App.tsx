@@ -21,6 +21,10 @@ function App() {
   const curScroll = useAppSelector((state) => state.headerPosition.curScroll);
 
   useEffect(() => {
+    console.log(
+      "□□□□□□□□□□□□□□□□□□□□□□□□□□\n□□■□□□□□□■□□■□□■■■■□□■■■■□\n□■■□□□□□□■□□■□□■□□□□□■□□□□\n□□■□□■■□□■■■■□□■■■■□□■■■■□\n□□■□□□□□□■□□■□□■□□□□□■□□□□\n□■■■□□□□□■□□■□□■■■■□□■■■■□\n□□□□□□□□□□□□□□□□□□□□□□□□□□\n"
+    );
+
     const handleScroll = () => {
       dispatch(setCurScroll(window.scrollY));
     };

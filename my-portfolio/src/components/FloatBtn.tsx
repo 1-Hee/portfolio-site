@@ -5,10 +5,16 @@ import { setCurScroll } from "../redux/headerPosition";
 
 import "../styles/css/FloatBtn.css";
 
+function readFile(file: File) {
+  let fileReader = new FileReader();
+  const result = fileReader.readAsText(file);
+  console.dir(result);
+}
+
 const moveToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth", // 부드럽게 스크롤 이동하도록 설정 (선택사항)
+    behavior: "smooth", // 부드럽게 스크롤 이동
   });
 };
 
@@ -16,7 +22,9 @@ export default function FloatBtn() {
   const dispatch = useAppDispatch();
   const curScroll = useAppSelector((state) => state.headerPosition.curScroll);
   const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {}, [curScroll]);
+
   return (
     <div
       onMouseOver={(e) => {

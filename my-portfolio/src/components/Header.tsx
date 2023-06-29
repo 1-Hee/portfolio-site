@@ -6,7 +6,6 @@ import { useAppSelector } from "../redux/hooks";
 import "../styles/css/Header.css";
 
 const scrollToPosition = (y: number) => {
-  console.log(y);
   window.scrollTo({
     top: y,
     behavior: "smooth", // 부드럽게 스크롤 이동하도록 설정 (선택사항)

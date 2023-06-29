@@ -49,6 +49,7 @@
     }
 
     .project-name {
+      width: 100%;
       font-size: 1.5rem;
       @media (max-width: 400px) {
         font-size: 1rem;
@@ -81,7 +82,7 @@
     }
 
     .pj-type-badge {
-      display: flex;
+      display: black;
       padding: 0.5rem;
       justify-content: center;
       align-items: flex-start;
@@ -93,6 +94,18 @@
       @media (min-width: 1023px) {
         font-size: 0.75rem;
       }
+    }
+    .android {
+      background-color: $badge-green;
+      color: $mono700;
+    }
+    .web-app {
+      background-color: $badge-blue;
+      color: $black;
+    }
+    .def-type {
+      background-color: $mono100;
+      color: $mono900;
     }
   }
 }
